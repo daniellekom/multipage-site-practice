@@ -1,0 +1,7 @@
+Got the following error:
+
+"Failed to compile ./src/index.js Attempted import error: 'react-router-dom' does not contain a default export (imported as 'ReactDOM')."
+
+Resolved:
+npm install react react-dom --save
+
