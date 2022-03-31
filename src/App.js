@@ -6,18 +6,21 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Article from "./pages/Article";
+import logo from "./img/bocacodelogo.png"
 
 
 function App() {
   return (
     <div className="App">
    <BrowserRouter>
-        <nav>
-          <h1>Boca Code News</h1>
-          <NavLink exact to ="/">Home</NavLink>
-          <NavLink to ="/about">About</NavLink>
-          <NavLink to ="/contact">Contact</NavLink>
+        <nav className="header">
+        <img src={logo} alt="img" className="logo" />
+          {/* <h1>Boca Code News</h1> */}
+          <NavLink exact to ="/">News</NavLink>
+          {/* <NavLink to ="/about">About</NavLink>
+          <NavLink to ="/contact">Contact</NavLink> */}
         </nav>
+        <hr/>
     <Switch>
           <Route exact path="/">
             <Home />

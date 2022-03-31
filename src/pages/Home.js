@@ -19,7 +19,7 @@ export default function Home() {
           <h3>{article.title}</h3>
           <p>{article.author}</p>
       <Link to={`/articles/${article.id}`}>
-        <button>Read more...</button>
+        <button>Read more</button>
       </Link>
            </div>
       ))}
