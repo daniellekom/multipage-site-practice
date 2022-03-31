@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
+import image from "../img/newsimg1.png"
 
 //styles
 import "./Home.css"
@@ -9,14 +10,17 @@ export default function Home() {
   
   return (
     <div className="home">
-      <h2>Articles</h2>
+      <h2>Whats new in TECH</h2>
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {articles && articles.map((article)=> (
         <div key={article.id} className="card">
+          <img src={image} alt="img" className="article-image"/>
           <h3>{article.title}</h3>
           <p>{article.author}</p>
-      <Link to={`/articles/${article.id}`}>Read more...</Link>
+      <Link to={`/articles/${article.id}`}>
+        <button>Read more...</button>
+      </Link>
            </div>
       ))}
     </div>

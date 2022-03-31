@@ -1,7 +1,33 @@
 .home .card{
-    padding: 20px;
-    border: 1px solid #e4e4e4;
-    border-radius: 4px;
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
-    margin-bottom:20px;
+   
+    margin-bottom: 10px; 
+    justify-content: space-around;
+ 
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid #272262;
+    box-shadow: 1px 1px 3px #272262;
+}
+
+.article-image {
+    width: 50vw;
+    height: 30vh;
+    margin-top: 15px; 
+}
+
+.home button{
+
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: .8rem 3rem .8rem;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+    background-color: #272261;
+    color:#ffffff;
+}
+
+.home button:hover {
+    background-color: #ff216e;
+    color: #fff;
 }
